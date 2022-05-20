@@ -1,6 +1,4 @@
 function triangleHeight(side1, side2, base){
-    
-
     if (side1 != side2){
         console.error("los lados no son iguales");
     }

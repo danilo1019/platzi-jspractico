@@ -1,17 +1,23 @@
 PI = Math.PI;
 
 //SQUARE
-function perimeterSquare(sideSquare) {
-    return sideSquare*4;
+function perimeterSquare(sideSquare){
+    return sideSquare * 4;
 }
-perimeterSquare();
-//console.log("perimeter : "+perimeterSquare);
+function calculatePerimeterSquare(){
+    const input = document.getElementById("inputSquare");
+    const value = input.value; //obtiene el valor del input
+    const perimeter = perimeterSquare(value);
+    alert(perimeter);
+}
+ 
+
 
 function areaSquare(sideSquare){
     return sideSquare*sideSquare;
 }
 
-function perimeterTriangle(side1, side2, base){
+/*function perimeterTriangle(side1, side2, base){
     return side1 + side2 + base;
 }
 
@@ -30,4 +36,4 @@ function perimeterCircle(radius){
 
 function areaCircle(radius){
     return (radius*radius)*PI;
-}
+}*/
