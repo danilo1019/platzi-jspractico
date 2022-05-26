@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geometricas</title>
+    <title>Shapes Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header> 
-        <h1>Figuras geometricas</h1>
-        <p>Primer taller curso JS practico</p>
+    <header class="container">
+        <div class="container-wrapp">
+            <div class="container-logo">
+                LUDAN
+            </div>
+            <nav class="container-nav">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Social</a></li>
+                </ul>
+            </nav>
+            <div class="container-button">
+                <button>
+                    profile
+                </button>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Calcula el area y perimetro de un cuadrado</h2>
-            <form>
-                <label for="inputSquare">
-                    Escribe cuanto mide el lado del cuadrado
-                </label>
-                <input id="inputSquare" type="number"/>
-            <button type="button" onclick="calculatePerimeterSquare()">
-                Perimetro
-            </button>
-            <button type="button" onclick="calculateAreaSquare()">
-                Area
-            </button>
-            </form>
-        </section>
-    </main>
-</body>
-<script src="./figuresFunction.js"></script>
+        <main class="calcMain">
+            <!-- Square-->
+            <section class="main-square">
+                <h2 class="main-square-title">
+                    Find area and perimeter of a Square
+                </h2>
+                <form class="main-square-form">
+                    <label for="inputSquare">
+                        Type square side measure
+                    </label>
+                    <input id="inputSquare" type="number"/>
+                    <button type="button" onclick="calculatePerimeterSquare()">
+                        Calculate perimeter
+                    </button>
+                    
+                    <button type="button" onclick="calculateAreaSquare()">
+                        Calculate area
+                    </button>
+                </form>
+                <form class="main-triangle-form">
+                    <label for="inputTriangle">
+                        Type square side measure
+                    </label>
+                    <input id="inputTriangle" type="number"/>
+                    <button type="button" onclick="calculatePerimeterTriangle()">
+                        Calculate perimeter
+                    </button>
+                    
+                    <button type="button" onclick="calculateAreaTriangle()">
+                        Calculate area
+                    </button>
+                </form>
+                <p id = "resultSquare"></p>
+            </section>
+            <section class="main-triangle">
+                
+            </section>
+            <section class="main-circle">
+                
+            </section>
+        </main>
+    </body>
+    <script src="./figuresFunction.js"></script>
 </html>

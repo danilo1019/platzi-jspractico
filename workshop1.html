@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/workshop1style.css">
+</head>
+<body>
+    <header class="headcontainer">
+        <div class="headcontainer-logo">
+            <img src="" alt="logo">
+        </div>
+        <nav class="headcontainer-navbar">
+            <ul class="headcontainer-navbar_list">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+                <li>
+                    <a href="">Social</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="headcontainer-button">
+            <button>
+                Contact
+            </button>
+        </div>
+    </header>
+    <main class="maincontainer">
+        <div class="maincontainer-description">
+            <h1>SHAPES CALCULATOR</h1>
+            <p>
+                Platzi workshop#1 you can find the area and perimeter of a square, triangle and circle.
+                <br>Type the correct measures at each shape!
+            </p>
+        </div>
+        <div class="maincontainer-content">
+
+            <div class="maincontainer-card">
+                <h2>SQUARE</h2>
+                <form class="maincontainer-card_square">
+                    <label for="inputSquare">How long is the square side?</label>
+                    <div class="maincontainer-card_square--inputContainer">
+                        <input 
+                            type="number"
+                            placeholder="Number" 
+                            id="inputSquare"
+                        />
+                    </div>
+                    <div class="maincontainer-card_square--buttons">
+
+                        <button class="buttoncard" type="button" onclick="calculatePerimeterSquare()">
+                            Perimeter
+                        </button>
+                        <button class="buttoncard" type="button" onclick="calculateAreaSquare()">
+                            Area
+                        </button>
+                        
+                    </div>
+                    <p class="maincontainer-card_text">Result:</p>
+                    <div  class="maincontainer-card_square--result">
+                        <p class="maincontainer--textresult" id="resultSquare"></p> 
+                    </div>
+                </form>
+            </div>
+            
+            <div class="maincontainer-card">
+                <h2>TRIANGLE</h2>
+            </div>
+            
+            <div class="maincontainer-card">
+                <h2>CIRCLE</h2>
+            </div>
+            
+        </div>
+
+    </main>
+</body>
+<script src="./workshop1.js"></script>
+</html>

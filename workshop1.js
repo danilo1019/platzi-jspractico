@@ -8,13 +8,18 @@ function calculatePerimeterSquare(){
     const input = document.getElementById("inputSquare");
     const value = input.value; //obtiene el valor del input
     const perimeter = perimeterSquare(value);
-    alert(perimeter);
+    const result = document.getElementById("resultSquare");
+    result.innerText = `The perimeter is ${perimeter}`; 
 }
- 
-
-
 function areaSquare(sideSquare){
     return sideSquare*sideSquare;
+}
+function calculateAreaSquare(){
+    const input = document.getElementById("inputSquare");
+    const value = input.value; //obtiene el valor del input
+    const area = areaSquare(value);
+    const result = document.getElementById("resultSquare");
+    result.innerText = `The area is ${area}`;
 }
 
 /*function perimeterTriangle(side1, side2, base){
