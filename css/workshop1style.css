@@ -107,3 +107,59 @@ div .maincontainer-card_square--buttons{
     border: 2px solid white;
     border-radius: 7px;
 }
+.maincontainer-card_triangle{
+    margin: 4rem;
+}
+.maincontainer-card_triangle--inputContainer{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%; 
+}
+.maincontainer-card_triangle--inputContainer input{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.inputTriangle-base{
+    margin-bottom: 3rem;
+}
+.maincontainer-card_triangle--result{
+    box-sizing: border-box;
+    width: 100%;
+    height: 8rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.maincontainer-card_circle{
+    margin: 4rem;
+}
+.maincontainer-card_circle--inputContainer{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%; 
+}
+.maincontainer-card_circle--inputContainer input{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.maincontainer-card_circle--result{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.buttoncard-diameter{
+    justify-content: center;
+}

@@ -71,10 +71,76 @@
             
             <div class="maincontainer-card">
                 <h2>TRIANGLE</h2>
+                <form class="maincontainer-card_triangle">
+                    <label for="inputTriangle">Triangle base</label>
+                    <div class="maincontainer-card_triangle--inputContainer">
+                        <input 
+                            class="inputTriangle-base"
+                            type="number"
+                            placeholder="Number" 
+                            id="inputTriangleBase"
+                        />
+                        <label for="inputTriangle">Triangle side 1</label>
+                        <div class="maincontainer-card_triangle--inputContainer">
+                            <input 
+                            class="inputTriangle-side1"
+                            type="number"
+                            placeholder="Number" 
+                            id="inputTriangleSide1"
+                            />
+                        </div>
+                        <label for="inputTriangle">Triangle side 2</label>
+                        <div class="maincontainer-card_triangle--inputContainer">
+                            <input 
+                            class="inputTriangle-side2"
+                            type="number"
+                            placeholder="Number" 
+                            id="inputTriangleSide2"
+                            />
+                        </div>
+                    </div>
+                    <div class="maincontainer-card_triangle--buttons">
+
+                        <button class="buttoncard" type="button" onclick="calculatePerimeterTriangle()">
+                            Perimeter
+                        </button>
+                        <button class="buttoncard" type="button" onclick="calculateAreaTriangle()">
+                            Area
+                        </button>
+                        
+                    </div>
+                    <p class="maincontainer-card_text">Result:</p>
+                    <div  class="maincontainer-card_triangle--result">
+                        <p class="maincontainer--textresult" id="resultTriangle"></p> 
+                    </div>
+                </form>
             </div>
             
             <div class="maincontainer-card">
                 <h2>CIRCLE</h2>
+                <form class="maincontainer-card_circle">
+                    <label for="inputCircle">Write the radius circle</label>
+                    <div class="maincontainer-card_circle--inputContainer">
+                        <input 
+                            type="number"
+                            placeholder="Number" 
+                            id="inputCircle"
+                        />
+                    </div>
+                    <div class="maincontainer-card_circle--buttons">
+
+                        <button class="buttoncard" type="button" onclick="calculatePerimeterCircle()">
+                            Perimeter
+                        </button>
+                        <button class="buttoncard" type="button" onclick="calculateAreaCircle()">
+                            Area
+                        </button>    
+                    </div>
+                    <p class="maincontainer-card_text">Result:</p>
+                    <div  class="maincontainer-card_circle--result">
+                        <p class="maincontainer--textresult" id="resultCircle"></p> 
+                    </div>
+                </form>
             </div>
             
         </div>
