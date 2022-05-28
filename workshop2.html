@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop#2</title>
+    <link rel="stylesheet" href="./css/Workshop2style.css">
+</head>
+<header>
+
+</header>
+<body>
+    <h1>Workshop #2</h1>
+    <p>Calculate prices and discount on a product</p>
+
+    <form>
+
+        <label for="inputPrice">Write the price of product</label>
+
+        <input 
+        type="number"
+        class=""
+        placeholder="Price"
+        id="inputPrice"
+        />
+
+        <label for="inputDiscount">Discount percentage</label>
+
+        <input 
+        type="number"
+        placeholder="Discount"
+        class=""
+        id="inputDiscount"
+        />
+
+        <Label for="inputCoupon">Ingresa tu cupon de descuento</Label>
+
+        <input 
+            id="inputCoupon"
+            placeholder="Coupon"
+            type="text"
+        />
+        
+        <button 
+        onclick="calculateFinalPrice()"
+        class="buttonPrice"
+        type="button">
+        Calcute price with discount
+        </button>
+
+        <p id="resultPrice"></p>
+        <button>Reset</button>
+    
+    </form>
+
+</body>
+<script src="./workshop2.js"></script>
+</html>
