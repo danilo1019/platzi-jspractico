@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #8888;
+}   
+header a{
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    font-weight: 400;
+
+}
+header .headerLogo{
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+header .headerButtons{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem;
+}
+header .headerNav ul{
+    list-style: none;
+    display: flex;
+    
+}
+header .headerNav ul li {
+    margin-right: 3rem;
+}
+header .headerBrowser {
+    margin: 1rem;
+    background-color: wheat;
+    width: 60%;
+}
+.headerBrowser .headerBrowser-input{
+    width: 100%;
+    height: 4rem;
+    padding-left: 2rem;
+}
+
+body .main-description{
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+    width: 100%px;
+    background: #4c005c;
+    color: white;
+}
+
+.headerButtons .headerButtons-Sing{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(51, 50, 50);
+    border: none;
+}
+.headerButtons .headerButtons-Sell{
+    font-size: 1.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px 15px ;
+}

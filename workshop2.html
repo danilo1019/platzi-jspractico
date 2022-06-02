@@ -8,14 +8,41 @@
     <link rel="stylesheet" href="./css/Workshop2style.css">
 </head>
 <header>
+    <div class="headerLogo">
+        stockX
+
+    </div>
+    <div class="headerBrowser">
+        <input 
+            type="text"
+            class="headerBrowser-input"
+        />
+
+    </div>
+    <div class="headerNav">
+        <ul>
+            <li><a href="">Browse</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+    <div class="headerButtons">
+        <button class="headerButtons-Sing" type="button">Sing Up</button>
+        <button class="headerButtons-Sell" type="button">Sell</button>
+
+    </div>
 
 </header>
 <body>
-    <h1>Workshop #2</h1>
-    <p>Calculate prices and discount on a product</p>
+    <div class="main-description"> 
+        <h1>Workshop #2</h1>
+    </div>
 
-    <form>
-
+    <div class="main-container">
+        <form>
+            
         <label for="inputPrice">Write the price of product</label>
 
         <input 
@@ -52,7 +79,8 @@
         <p id="resultPrice"></p>
         <button>Reset</button>
     
-    </form>
+        </form>
+</div>
 
 </body>
 <script src="./workshop2.js"></script>
