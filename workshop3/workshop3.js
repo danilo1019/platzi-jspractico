@@ -35,7 +35,10 @@ function esPar (number){
 } else {
     mediana = listaMediana[mitadLista];
 }*/
-//RETO..//
+
+
+
+//RETO........................................................................//
 let listaOrdenada;
 let mitadLista;
 let mediana; 
@@ -76,6 +79,7 @@ function calcularMediana (lista){
     }  
     
 } 
+//---------------------------------------------------------------------------
 
 //ARRAY SORT
 
@@ -85,5 +89,68 @@ function calcularMediana (lista){
  }
  arr.sort(comparar);
  console.log(arr);*/
+ 
+ //......................................................................
 
-    
+// MODA
+
+const lista1 = [
+    1,
+    2,
+    2,
+    3,
+    1,
+    3,
+    4,
+    5,
+    1,
+    2,
+    1,
+    3,
+    2,
+    3,
+    4,
+    1,
+    2,
+    2,
+    2,
+    1
+
+]
+
+const lista1Count = {};
+
+lista1.map(
+    function (indexValue){
+        if (lista1Count[indexValue]){
+            lista1Count[indexValue] += 1;
+        } else {
+
+            lista1Count[indexValue] = 1;
+        }  
+       
+    }
+    );
+
+const lista1Array = Object.entries(lista1Count).sort(
+    function(valorAcoumulado, nuevoValor){
+        valorAcoumulado - nuevoValor;
+    }
+)
+
+const conduit = {
+    material : 25,
+    size : 5,
+    number : 2,
+    schedule : 10
+}
+
+const conduit2 = Object.entries(conduit).sort(
+    function(currentValue, newValue){
+        return -currentValue[1] + newValue[1];
+    }
+);
+ /**
+  * TODO: Hacer workshop 3 con promedio ponderado, promedio y notas mas altas para una app de notas universitarias
+  * 
+  */
