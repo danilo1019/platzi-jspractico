@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROMEDIO, MEDIA Y MEDIANA</title>
+    <title>STATISTICS CALC</title>
     <link rel="stylesheet" href="/css/workshop3style.css">
 </head>
 <body>
-    <h1>Promedio, mediana y moda</h1>
-<script src="./workshop3.js"></script>
+    <form>
+
+        <h1>MEAN, MEDIAN AND MODE CALCULATOR</h1>
+        <p>Enter data set</p>
+        <input type="text" placeholder="Ex: 1,5,2,10,25..." id="inputArray">
+        <button 
+            id="buttonMean" 
+            type="button" 
+            onclick="calculateMeanButton()">
+            Calculate Mean
+        </button>
+        <button 
+            id="buttonMedian" 
+            type="button" 
+            onclick="calculateMedianButton()">
+            Calculate Median
+        </button>
+        <p>Answer</p>
+        <button 
+            id="buttonMode" 
+            type="button" 
+            onclick="calculateModeButton()">
+            Calculate Mode
+        </button>
+        <p id="resultTextMean"></p>
+        <p id="resultTextMedian"></p>
+        <p id="resultTextMode"></p>
+    </form>
+<script src="./workshop3.1.js"></script>
 </body>
 </html>

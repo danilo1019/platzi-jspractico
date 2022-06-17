@@ -1,7 +1,5 @@
-
-//PROMEDIO
-/*function calcularMediaArtitmetica (lista){
-
+//* PROMEDIO
+function calcularMediaArtitmetica (lista){
     const sumaLista = lista.reduce(
         function(valorAcumulado = 0, nuevoElemento) {
             return valorAcumulado + nuevoElemento;
@@ -11,22 +9,17 @@
     return promLista;
 }
 
-//MEDIANA   
-/*let listaMediana ;
+
+/** 
+//* MEDIANA   
+let listaMediana ;
 
 const mitadLista = parseInt(listaMediana.length / 2);
 
 let mediana;
 
-function esPar (number){
-    if (number % 2  === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
-/*if (esPar(listaMediana.length)){
+if (esPar(listaMediana.length)){
     const elemento1 = listaMediana[mitadLista - 1];
     const elemento2 = listaMediana[mitadLista];
     const promedio = calcularMediaArtitmetica([elemento1,elemento2]);
@@ -35,13 +28,6 @@ function esPar (number){
 } else {
     mediana = listaMediana[mitadLista];
 }*/
-
-
-
-//RETO........................................................................//
-let listaOrdenada;
-let mitadLista;
-let mediana; 
 function esPar (number){
     if (number % 2  === 0) {
         return true;
@@ -49,6 +35,10 @@ function esPar (number){
         return false;
     }
 }
+
+//* MEDIA
+let listaOrdenada;
+
 function calcularMediaArtitmetica (lista){
 
     const sumaLista = lista.reduce(
@@ -90,66 +80,29 @@ function calcularMediana (lista){
  arr.sort(comparar);
  console.log(arr);*/
  
- //......................................................................
-
-// MODA
-
-const lista1 = [
-    1,
-    2,
-    2,
-    3,
-    1,
-    3,
-    4,
-    5,
-    1,
-    2,
-    1,
-    3,
-    2,
-    3,
-    4,
-    1,
-    2,
-    2,
-    2,
-    1
-
-]
-
-const lista1Count = {};
-
-lista1.map(
-    function (indexValue){
-        if (lista1Count[indexValue]){
-            lista1Count[indexValue] += 1;
-        } else {
-
-            lista1Count[indexValue] = 1;
-        }  
-       
-    }
+function calculateMode(values) {
+    const valuesCount = {};
+    values.map(
+        function (indexValue){
+            if (valuesCount[indexValue]){
+                valuesCount[indexValue] += 1;
+            }else {
+                valuesCount[indexValue] = 1;
+            }
+        }
     );
 
-const lista1Array = Object.entries(lista1Count).sort(
-    function(valorAcoumulado, nuevoValor){
-        valorAcoumulado - nuevoValor;
-    }
-)
+    const valuesArray = Object.entries(valuesCount).sort(
+        function (currentValue, newValue){
+            return currentValue[1] - newValue[1];
+        }
+    );
 
-const conduit = {
-    material : 25,
-    size : 5,
-    number : 2,
-    schedule : 10
-}
+    return valuesArray[valuesArray.length - 1];
+};
 
-const conduit2 = Object.entries(conduit).sort(
-    function(currentValue, newValue){
-        return -currentValue[1] + newValue[1];
-    }
-);
+// !convertir a funcion la moda donde el usuario introdusca la lista
+
  /**
   * TODO: Hacer workshop 3 con promedio ponderado, promedio y notas mas altas para una app de notas universitarias
   * 
